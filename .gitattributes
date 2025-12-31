@@ -1,0 +1,22 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Force LF endings for JavaScript, JSON, and SVG files
+*.js     text eol=lf
+*.mjs    text eol=lf
+*.cjs    text eol=lf
+*.json   text eol=lf
+*.svg    text eol=lf
+
+# Markdown and text files
+*.md     text eol=lf
+*.txt    text eol=lf
+
+# Ignore binaries
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.zip    binary
+*.exe    binary

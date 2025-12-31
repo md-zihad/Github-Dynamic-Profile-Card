@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.3.2"
+  },
+  "type": "module"
+}

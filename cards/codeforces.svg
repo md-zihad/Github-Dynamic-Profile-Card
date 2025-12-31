@@ -1,0 +1,32 @@
+<svg width="400" height="120" viewBox="0 0 400 120"
+       xmlns="http://www.w3.org/2000/svg">
+  
+    <defs>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#1f4037"/>
+        <stop offset="100%" stop-color="#99f2c8"/>
+      </linearGradient>
+    </defs>
+  
+    <rect x="0" y="0" width="400" height="120" rx="16" fill="url(#grad)"/>
+  
+    <text x="20" y="35" font-size="20" fill="white" font-weight="bold">
+      King_Bhoot_Key_Maker
+    </text>
+  
+    <text x="20" y="70" font-size="16" fill="white">
+      Rating: 1619
+    </text>
+  
+    <text x="20" y="95" font-size="14" fill="white">
+      Rank: expert
+    </text>
+  
+    <!-- subtle animation -->
+    <circle cx="350" cy="60" r="8" fill="white">
+      <animate attributeName="opacity"
+               values="0.2;1;0.2"
+               dur="2s"
+               repeatCount="indefinite"/>
+    </circle>
+  </svg>
