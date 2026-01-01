@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import fetch from "node-fetch";
 import * as cheerio from "cheerio";
+import { atcoderSVG } from "../cards/atcoderSVG.js";
 
 dotenv.config({ path: "../.env.dev" });
 
@@ -77,13 +78,16 @@ async function atcoder() {
             .replace(/\s+/g, "")
             .trim();
 
-        console.log(rank);
-        console.log(rating);
-        console.log(highestRating);
-        console.log(ratingMatches);
-        console.log(ratedMatches);
+        const svg = atcoderSVG(userName, rating, rank, ratedMatches, highestRating);
+
+        console.log(svg);
+
+        const svgPath = path.resolve("../cards/atcoder.svg");
+
+        fs.writeFileSync(svgPath, svg);
     } catch (error) {
-        console.log(error);
+        console.error("Error fetching Codeforces API:", error);
+        throw error;
     }
 }
 

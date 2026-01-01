@@ -1,4 +1,5 @@
-<svg width="500" height="180" viewBox="0 0 500 180" xmlns="http://www.w3.org/2000/svg">
+export function atcoderSVG(userName, rating, rank, ratedMatches, highestRating) {
+    return `<svg width="500" height="180" viewBox="0 0 500 180" xmlns="http://www.w3.org/2000/svg">
 
         <!-- Gradient background -->
         <defs>
@@ -19,27 +20,27 @@
 
         <!-- Username -->
         <text x="20" y="40" font-size="24" fill="white" font-weight="bold">
-            md_zihadd
+            ${userName}
         </text>
 
         <!-- Current Rating -->
         <text x="20" y="75" font-size="18" fill="white">
-            Rating: 64494th
+            Rating: ${rating}
         </text>
 
         <!-- Highest Rating -->
         <text x="20" y="105" font-size="18" fill="white">
-            Highest Rating: 90(Provisional)
+            Highest Rating: ${highestRating}
         </text>
 
         <!-- Rated Matches -->
         <text x="20" y="135" font-size="16" fill="white">
-            Rated Matches: 3
+            Rated Matches: ${ratedMatches}
         </text>
 
         <!-- Rank -->
         <text x="20" y="155" font-size="16" fill="white">
-            Rank: 11 Kyu
+            Rank: ${rank}
         </text>
 
         <!-- AtCoder 3D Cube Logo on the right -->
@@ -54,4 +55,5 @@
             </use>
         </g>
 
-    </svg>
+    </svg>`;
+}
